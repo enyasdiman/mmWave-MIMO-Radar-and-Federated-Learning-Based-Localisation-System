@@ -1,0 +1,52 @@
+{
+  "method": "FedAvgM (Server Momentum beta=0.6 + Proximal mu=0.02 + Cosine Annealing LR)",
+  "fedavg_non_iid": {
+    "round_1_acc": 54.57,
+    "peak_acc": 98.14,
+    "final_acc": 97.83,
+    "final_loss": 0.0846,
+    "acc_curve": [
+      10.8,
+      54.57,
+      74.6,
+      82.06,
+      87.94,
+      90.97,
+      93.34,
+      95.03,
+      96.89,
+      97.14,
+      97.71,
+      97.54,
+      97.86,
+      98.14,
+      98.06,
+      97.83
+    ]
+  },
+  "fedavgm_non_iid": {
+    "round_1_acc": 57.03,
+    "peak_acc": 98.6,
+    "final_acc": 98.6,
+    "final_loss": 0.068,
+    "acc_curve": [
+      10.8,
+      57.03,
+      67.26,
+      77.63,
+      88.43,
+      95.66,
+      97.23,
+      97.06,
+      97.03,
+      97.6,
+      97.89,
+      98.26,
+      98.57,
+      98.23,
+      98.49,
+      98.6
+    ]
+  },
+  "execution_time_seconds": 508.18
+}

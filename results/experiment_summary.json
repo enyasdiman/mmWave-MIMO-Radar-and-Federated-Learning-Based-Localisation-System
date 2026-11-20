@@ -1,0 +1,114 @@
+{
+  "hardware_config": {
+    "numTxAnt": 2,
+    "numRxAnt": 4,
+    "numVirtualAnt": 8,
+    "numRangeBins": 256,
+    "numAngleBins": 63,
+    "numDopplerBins": 16,
+    "rangeResolutionMeters": 0.0436,
+    "rangeIdxToMeters": 0.0436,
+    "dopplerResolutionMps": 0.1252,
+    "maxRangeMeters": 10.05,
+    "maxVelocityMps": 1.0
+  },
+  "dataset_stats": {
+    "total_train_samples": 9000,
+    "total_test_samples": 3500,
+    "num_clients": 9,
+    "num_classes": 10,
+    "days": [
+      "day0",
+      "day1",
+      "day2"
+    ]
+  },
+  "final_test_accuracy_percent": {
+    "Centralized_IID": 99.11,
+    "FedAvg_IID": 98.63,
+    "FedAvg_NonIID": 97.91,
+    "FedProx_NonIID": 97.63
+  },
+  "day_wise_test_accuracy_percent": {
+    "day0": 99.93,
+    "day1": 97.4,
+    "day2": 97.9
+  },
+  "classification_report": {
+    "Sınıf 0": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 353.0
+    },
+    "Sınıf 1": {
+      "precision": 1.0,
+      "recall": 0.9941002949852508,
+      "f1-score": 0.9970414201183432,
+      "support": 339.0
+    },
+    "Sınıf 2": {
+      "precision": 0.9694444444444444,
+      "recall": 1.0,
+      "f1-score": 0.9844851904090268,
+      "support": 349.0
+    },
+    "Sınıf 3": {
+      "precision": 0.9855072463768116,
+      "recall": 0.9941520467836257,
+      "f1-score": 0.9898107714701602,
+      "support": 342.0
+    },
+    "Sınıf 4": {
+      "precision": 0.986737400530504,
+      "recall": 1.0,
+      "f1-score": 0.9933244325767691,
+      "support": 372.0
+    },
+    "Sınıf 5": {
+      "precision": 0.9970059880239521,
+      "recall": 0.9680232558139535,
+      "f1-score": 0.9823008849557522,
+      "support": 344.0
+    },
+    "Sınıf 6": {
+      "precision": 0.9306666666666666,
+      "recall": 0.9858757062146892,
+      "f1-score": 0.9574759945130316,
+      "support": 354.0
+    },
+    "Sınıf 7": {
+      "precision": 1.0,
+      "recall": 0.9916897506925207,
+      "f1-score": 0.9958275382475661,
+      "support": 361.0
+    },
+    "Sınıf 8": {
+      "precision": 1.0,
+      "recall": 0.9972067039106145,
+      "f1-score": 0.9986013986013986,
+      "support": 358.0
+    },
+    "Sınıf 9": {
+      "precision": 1.0,
+      "recall": 0.926829268292683,
+      "f1-score": 0.9620253164556962,
+      "support": 328.0
+    },
+    "accuracy": 0.9862857142857143,
+    "macro avg": {
+      "precision": 0.986936174604238,
+      "recall": 0.9857877026693339,
+      "f1-score": 0.9860892947347744,
+      "support": 3500.0
+    },
+    "weighted avg": {
+      "precision": 0.9868205606427336,
+      "recall": 0.9862857142857143,
+      "f1-score": 0.9862884851202155,
+      "support": 3500.0
+    }
+  },
+  "realtime_inference_ms": 3.228,
+  "total_execution_seconds": 526.31
+}

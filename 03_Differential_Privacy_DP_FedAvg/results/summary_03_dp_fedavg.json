@@ -1,0 +1,108 @@
+{
+  "method": "Client-Level Differential Privacy (DP-FedAvg with L2 Clipping & Gaussian Mechanism)",
+  "clip_norm_C": 2.0,
+  "num_rounds": 12,
+  "experiments": [
+    {
+      "config_name": "Gürültüsüz (σ=0.0, ε=∞)",
+      "noise_sigma": 0.0,
+      "clip_norm_C": 2.0,
+      "epsilon": "∞",
+      "delta": 1e-05,
+      "peak_test_acc_percent": 98.6,
+      "final_test_acc_percent": 98.34,
+      "final_test_loss": 0.056,
+      "acc_curve": [
+        10.8,
+        84.66,
+        90.57,
+        94.09,
+        97.06,
+        97.49,
+        97.97,
+        98.17,
+        98.6,
+        98.54,
+        98.6,
+        98.37,
+        98.34
+      ]
+    },
+    {
+      "config_name": "Düşük Gürültü (σ=0.03, Yüksek Doğruluk)",
+      "noise_sigma": 0.03,
+      "clip_norm_C": 2.0,
+      "epsilon": "92.47",
+      "delta": 1e-05,
+      "peak_test_acc_percent": 98.66,
+      "final_test_acc_percent": 98.63,
+      "final_test_loss": 0.052,
+      "acc_curve": [
+        10.8,
+        72.31,
+        88.23,
+        93.2,
+        96.46,
+        97.86,
+        98.03,
+        98.29,
+        98.11,
+        98.66,
+        98.31,
+        98.46,
+        98.63
+      ]
+    },
+    {
+      "config_name": "Orta Gürültü (σ=0.06, Dengeli Gizlilik)",
+      "noise_sigma": 0.06,
+      "clip_norm_C": 2.0,
+      "epsilon": "34.84",
+      "delta": 1e-05,
+      "peak_test_acc_percent": 98.54,
+      "final_test_acc_percent": 98.23,
+      "final_test_loss": 0.0678,
+      "acc_curve": [
+        10.8,
+        64.43,
+        85.14,
+        90.46,
+        94.97,
+        96.86,
+        97.0,
+        97.77,
+        97.89,
+        98.54,
+        98.31,
+        98.14,
+        98.23
+      ]
+    },
+    {
+      "config_name": "Yüksek Gürültü (σ=0.12, Sıkı Gizlilik)",
+      "noise_sigma": 0.12,
+      "clip_norm_C": 2.0,
+      "epsilon": "14.44",
+      "delta": 1e-05,
+      "peak_test_acc_percent": 98.11,
+      "final_test_acc_percent": 96.91,
+      "final_test_loss": 0.1018,
+      "acc_curve": [
+        10.8,
+        44.14,
+        71.37,
+        81.34,
+        90.94,
+        93.97,
+        93.37,
+        96.94,
+        96.91,
+        97.43,
+        98.11,
+        96.83,
+        96.91
+      ]
+    }
+  ],
+  "execution_time_seconds": 865.71
+}
